@@ -147,7 +147,8 @@ public class SimpleHashMap<K, V> {
         }
         table = nt;
         threshold = (int) (newCap * loadFactor);
-        System.out.printf("[resize] 容量 %d -> %d，阈值 -> %d%n", oldCap, newCap, threshold);
+        System.out.printf("[Thread-%s] [resize] 容量 %d -> %d，阈值 -> %d%n",
+                          Thread.currentThread().getName(), oldCap, newCap, threshold);
     }
 
     /** 打印内部结构：每个非空桶的链表长这样 [下标] k=v -> k=v */
