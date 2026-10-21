@@ -11,6 +11,8 @@
 | 篇数 | 主题 | 目录 |
 | --- | --- | --- |
 | 第 1 篇 | 手写简化哈希表（拉链法 + 扰动 + 扩容） | `01-hash-table-from-scratch/` |
+| 第 2 篇 | 手写简化 ConcurrentHashMap（CAS + sizeCtl + CounterCell） | `02-concurrent-hash-map/` |
+| 第 3 篇 | 延时队列：从定时轮询到 Redis ZSET（BlockingQueue → DelayQueue → ZSET 原子抢占） | `03-message-queue/` |
 
 ## 每篇包含什么
 
